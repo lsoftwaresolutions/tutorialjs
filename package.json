@@ -1,0 +1,33 @@
+{
+  "name": "tutorialjs",
+  "version": "1.0.0",
+  "description": "Tutorial JS",
+  "author": "Ruslan Lekhman <lekhman112@gmail.com>",
+  "homepage": "http://www.tutorialjs.lsoftwaresolutions.com",
+  "license": "MIT",
+  "scripts": {
+    "install": "cd server && npm install && cd ../client && npm install",
+    "server:dev": "cd server && npm run dev",
+    "client:dev": "cd client && npm start",
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+    "server": "cd server && npm run prod",
+    "client": "cd client && npm run server:prod",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "test": "cd client && npm run test",
+    "e2e": "cd client && npm run e2e"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "concurrently": "^2.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lsoftwaresolutions/tutorialjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lsoftwaresolutions/tutorialjs/issues"
+  },
+  "engines": {
+    "node": ">=6"
+  }
+}
